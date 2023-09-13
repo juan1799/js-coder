@@ -6,6 +6,14 @@ let nota1 = 0,
   nota3 = 0;
 let bandera = true;
 
+const validarNombre = (nombre) => {
+  if (nombre === "") {
+    return true;
+  } else {
+    return false;
+  }
+};
+
 const validarContrasenia = (contrasenia) => {
   if (contrasenia.length < 4) {
     return true;
@@ -16,7 +24,17 @@ const validarContrasenia = (contrasenia) => {
 
 const creacionDeUsuario = () => {
   nombreProf = prompt("Ingrese su nombre");
+  while (validarNombre(nombreProf)) {
+    nombreProf = prompt(
+      "El nombre ingresado no es valido. Ingrese su nombre correctamente"
+    );
+  }
   apellidoProf = prompt("Ingrese su apellido");
+  while (validarNombre(apellidoProf)) {
+    apellidoProf = prompt(
+      "El apellido ingresado no es valido. Ingrese su nombre correctamente"
+    );
+  }
   contrasenia = prompt("Ingrese una contraseña de al menos 4 caracteres");
   while (validarContrasenia(contrasenia)) {
     contrasenia = prompt(
