@@ -178,7 +178,16 @@ function validarOpcion(opcion) {
       mostrarProducto(opcion);
       banderaOpcion = false;
     } else if (opcion === 0) {
-      alert("terminando la simulación ");
+      if (productosEnCarrito.length === 0) {
+        alert("El carrito está vacio, terminando la simulación ");
+      } else {
+        alert(
+          "Carrito de compra: \n" +
+            concatenarCarrito() +
+            "\nEl total a pagar es: $" +
+            calcularTotal().toFixed(2)
+        );
+      }
       banderaOpcion = false;
     } else {
       alert("Ingrese una opcion correcta: (respuesta esperada: 1,2,...,13)");
