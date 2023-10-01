@@ -1,9 +1,18 @@
-body {
-  background-color: rgb(83, 18, 0);
-  color: antiquewhite;
-
-  padding: 3rem;
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  color: rgb(40, 253, 235);
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-h1 {
-  font-size: 2rem;
+body {
+  background-image: url("../Img/funkos-banner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+article {
+  background-color: rgba(0, 0, 0, 0.63);
 }
