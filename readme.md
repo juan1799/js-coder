@@ -1,4 +1,4 @@
-# Simulador interactivo de gestión de alumnos y notas 📚
+# Simulador interactivo de carrito de compras: Funko shop 🔫
 
 La simulación comienza cuando el usuario ingresa que desea simular el sistema de compras de funkos.
 
