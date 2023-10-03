@@ -163,7 +163,7 @@ function menuProductos() {
   });
   opcion = parseInt(
     prompt(
-      "TIENDA FUNKOS (Para salir presione 0)\nSeleccione un producto:\n" +
+      "TIENDA FUNKOS (Para salir presione 0)\nIngreso esperado: 1, 2, 3, ... , 13 \n\nSeleccione un producto:\n" +
         nombresProductos
     )
   );
