@@ -172,8 +172,9 @@ function menuProductos() {
 
 function validarOpcion(opcion) {
   let banderaOpcion = true;
-  let op2;
+
   while (banderaOpcion) {
+    console.log(opcion);
     if (opcion > 0 && opcion < 14) {
       mostrarProducto(opcion);
       banderaOpcion = false;
@@ -181,14 +182,12 @@ function validarOpcion(opcion) {
       if (productosEnCarrito.length === 0) {
         alert("El carrito está vacio, terminando la simulación ");
       } else {
-        alert(
-          "Carrito de compra: \n" +
-            concatenarCarrito() +
-            "\nEl total a pagar es: $" +
-            calcularTotal().toFixed(2)
-        );
+        alert(concatenarCarrito());
       }
       banderaOpcion = false;
+    } else if (isNaN(opcion)) {
+      alert("error, debio ingresar un valor.");
+      opcion = 0;
     } else {
       alert("Ingrese una opcion correcta: (respuesta esperada: 1,2,...,13)");
       menuProductos();
@@ -241,12 +240,7 @@ function agregarAlCarrito(producto, i) {
     if (validarOpcionSiNO(op)) {
       menuProductos();
     } else {
-      alert(
-        "Carrito de compra: \n" +
-          concatenarCarrito() +
-          "\nEl total a pagar es: $" +
-          calcularTotal().toFixed(2)
-      );
+      alert(concatenarCarrito());
     }
   } else {
     alert("la cantidad ingresada supera el stock maximo de " + producto.stock);
@@ -275,5 +269,10 @@ function concatenarCarrito() {
       "\n" +
       concatenacion;
   });
-  return concatenacion;
+  return (
+    "Carrito de compra: \n" +
+    concatenacion +
+    "\nEl total a pagar es: $" +
+    calcularTotal().toFixed(2)
+  );
 }
