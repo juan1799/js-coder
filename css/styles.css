@@ -306,8 +306,8 @@ header {
 }
 
 .card-item__cover img {
-  /* animation: fade 0.7s;
-  -webkit-animation: fade 0.7s; */
+  animation: fade 0.7s;
+  -webkit-animation: fade 0.7s;
 }
 
 .card-item__img--back {
