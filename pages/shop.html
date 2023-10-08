@@ -9,8 +9,14 @@
     <meta name="author" content="" />
     <meta name="keywords" content="html, css, js, javascript, codo a codo" />
 
+    <link
+      rel="shortcut icon"
+      href="../Assets/Img/branding/isotype.svg"
+      type="image/x-icon"
+    />
+
     <!-- Título-->
-    <title>Home │ Funkoshop</title>
+    <title>Shop │ Funkoshop</title>
 
     <!--Íconos-->
     <script
@@ -19,45 +25,50 @@
     ></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
   <body>
     <!-- Encabezado -->
-    <header>
+    <header class="header">
       <!--Navbar-->
-      <nav>
-        <picture>
-          <a href="./index.html">
+      <nav class="navbar container">
+        <picture class="navb ar__logo">
+          <a href="../index.html">
             <img
-              src="./Assets/Img/branding/logo_light_horizontal.svg"
+              src="../Assets/Img/branding/logo_light_horizontal.svg"
               alt="Isotipo de FunkoShop"
             />
           </a>
         </picture>
 
-        <ul>
-          <li>
-            <a href="./pages/shop.html">SHOP</a>
+        <ul class="navbar__menu">
+          <li class="navbar__item with-submenu">
+            <a class="navbar__link with-icon" href="./shop.html"
+              >SHOP <iconify-icon icon="carbon:chevron-down"></iconify-icon
+            ></a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Funkos</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Remeras</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Llaveros</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="./pages/contact.html">CONTACT</a>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./contact.html">CONTACT</a>
           </li>
-          <li>
-            <a href="./pages/login.html">LOGIN</a>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./login.html">LOGIN</a>
           </li>
-          <li>
-            <a href="./pages/cart.html">
+          <li class="navbar__item">
+            <a class="navbar__cart" href="./carrito.html">
               <img
-                src="./Assets/Img/icons/cart-icon.svg"
+                src="../Assets/Img/icons/cart-icon.svg"
                 alt="Icono del carrito"
               />
             </a>
@@ -69,45 +80,342 @@
     <!-- Fin del Encabezado -->
 
     <!-- Contenido -->
-    <main>TRABAJEN DESDE AQUI RECUERDEN NO TOCAR EL NAVBAR / FOOTER</main>
-    <!-- Fin del Contenido -->
-
-    <!-- Pie de página -->
-    <footer>
-      <section>
-        <nav>
-          <picture>
-            <a href="../index.html">
-              <img
-                src="../Assets/Img/branding/logo_light_horizontal.svg"
-                alt="Isotipo de FunkoShop"
-              />
-            </a>
-          </picture>
-
-          <ul>
-            <li>
-              <a href="./shop.html">SHOP</a>
+    <main class="shop">
+      <aside class="aside">
+        <span></span>
+        <ul class="categoria__items">
+          <li class="categoria__item">
+            <button class="categoria__boton active">
+              <iconify-icon
+                icon="bxs:up-arrow"
+                class="icono-negrita"
+              ></iconify-icon
+              >TODOS LOS PRODUCTOS
+            </button>
+          </li>
+          <li class="categoria__item">
+            <button class="categoria__boton">
+              <iconify-icon icon="bx:up-arrow" class="icono"></iconify-icon
+              >HARRY POTTER
+            </button>
+          </li>
+          <li class="categoria__item">
+            <button class="categoria__boton">
+              <iconify-icon icon="bx:up-arrow" class="icono"></iconify-icon
+              >POKEMON
+            </button>
+          </li>
+          <li class="categoria__item">
+            <button class="categoria__boton">
+              <iconify-icon icon="bx:up-arrow" class="icono"></iconify-icon>STAR
+              WARS
+            </button>
+          </li>
+        </ul>
+        <nav class="navbar container footer-shop">
+          <ul class="navbar__item">
+            <li class="navbar__item">
+              <a class="navbar__link" href="../index.html">HOME</a>
             </li>
             <li>
-              <a href="./contact.html">CONTACT</a>
+              <a class="navbar__link" href="./register.html">REGISTRARSE</a>
             </li>
-            <li>
-              <a href="./login.html">LOGIN</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./login.html">LOGIN</a>
             </li>
-            <li>
-              <a href="./carrito.html">
-                <img
-                  src="../Assets/Img/icons/cart-icon.svg"
-                  alt="Icono del carrito"
-                />
-              </a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./contact.html">CONTACTO</a>
             </li>
           </ul>
+          <picture>
+            <img
+              src="../Assets/Img/branding/isotype.svg"
+              alt="Isotipo de FunkoShop"
+            />
+          </picture>
+          <p class="footer__copy">
+            All rights reserved 2023 - Funkoshop &copy;
+          </p>
         </nav>
+      </aside>
+      <section class="productos">
+        <h3 class="productos__title">Todos los productos</h3>
+        <ul class="productos__items">
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img
+                    class="card-item__img--front"
+                    src="../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                  <img
+                    class="card-item__img--back"
+                    src="../Assets/Img/pokemon/pidgeotto-box.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon en caja"
+                  />
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img
+                    class="card-item__img--front"
+                    src="../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                  <img
+                    class="card-item__img--back"
+                    src="../Assets/Img/pokemon/pidgeotto-box.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon en caja"
+                  />
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img
+                    class="card-item__img--front"
+                    src="../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                  <img
+                    class="card-item__img--back"
+                    src="../Assets/Img/pokemon/pidgeotto-box.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon en caja"
+                  />
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img
+                    class="card-item__img--front"
+                    src="../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                  <img
+                    class="card-item__img--back"
+                    src="../Assets/Img/pokemon/pidgeotto-box.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon en caja"
+                  />
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img
+                    class="card-item__img--front"
+                    src="../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                  <img
+                    class="card-item__img--back"
+                    src="../Assets/Img/pokemon/pidgeotto-box.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon en caja"
+                  />
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img
+                    class="card-item__img--front"
+                    src="../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                  <img
+                    class="card-item__img--back"
+                    src="../Assets/Img/pokemon/pidgeotto-box.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon en caja"
+                  />
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img
+                    class="card-item__img--front"
+                    src="../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                  <img
+                    class="card-item__img--back"
+                    src="../Assets/Img/pokemon/pidgeotto-box.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon en caja"
+                  />
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img
+                    class="card-item__img--front"
+                    src="../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                  <img
+                    class="card-item__img--back"
+                    src="../Assets/Img/pokemon/pidgeotto-box.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon en caja"
+                  />
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img
+                    class="card-item__img--front"
+                    src="../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                  <img
+                    class="card-item__img--back"
+                    src="../Assets/Img/pokemon/pidgeotto-box.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon en caja"
+                  />
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+
+        <!-- <div class="container_pag">
+          <ul class="pag__items">
+            <li class="pag_item inactive">
+              <a class="pag__link" href=""
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+            </li>
+            <li class="pag_item active"><a class="pag__link" href="">1</a></li>
+            <li class="pag_item"><a class="pag__link" href="">2</a></li>
+            <li class="pag_item"><a class="pag__link" href="">...</a></li>
+            <li class="pag_item"><a class="pag__link" href="">9</a></li>
+            <li class="pag_item"><a class="pag__link" href="">10</a></li>
+            <li class="pag_item">
+              <a class="pag__link" href=""
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div> -->
       </section>
-      <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
+    </main>
+
+    <!-- Pie de página -->
+    <!-- <footer class="footer">
+      <nav class="navbar container">
+        <ul class="navbar__item">
+          <li class="navbar__item">
+            <a class="navbar__link" href="../index.html">HOME</a>
+          </li>
+          <li>
+            <a class="navbar__link" href="./register.html">REGISTRARSE</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./login.html">LOGIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./contact.html">CONTACTO</a>
+          </li>
+        </ul>
+        <picture>
+          <img
+            src="../Assets/Img/branding/isotype.svg"
+            alt="Isotipo de FunkoShop"
+          />
+        </picture>
+      </nav>
+      <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer> -->
     <!-- Fin de pie de página -->
   </body>
 
@@ -117,4 +425,5 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </html>
