@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!--Inf meta-->
     <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
       type="image/x-icon"
     />
     <!-- Título-->
-    <title>Cart │ Funkoshop</title>
+    <title>Carrito │ Funkoshop</title>
 
     <!--Íconos-->
     <script
@@ -79,7 +79,125 @@
     <!-- Fin del Encabezado -->
 
     <!-- Contenido -->
-    <main>TRABAJEN DESDE AQUI RECUERDEN NO TOCAR EL NAVBAR / FOOTER</main>
+    <main class="carrito-container container">
+      <section class="cart">
+        <h2 class="cart__title"><span>Carrito de Compras</span></h2>
+        <article class="cart__productos">
+          <ul class="cart__details">
+            <li class="cart__detail">DETALLE DE PRODUCTO</li>
+            <li class="cart__detail aux-padding">CANTIDAD</li>
+            <li class="cart__detail aux-padding">TOTAL</li>
+          </ul>
+
+          <ul class="cart__items">
+            <!-- Primer artículo en el carrito -->
+            <li class="cart__item">
+              <article class="cart__article">
+                <picture class="article__cover">
+                  <img
+                    class="article__image"
+                    src="../../Assets/Img/star-wars/baby-yoda-1.webp"
+                    alt="FunkoPop de Grogu de la serie The Mandalorian"
+                  />
+                </picture>
+                <div class="article__details">
+                  <div class="article__detail">
+                    <h4 class="article__name">BABY YODA BLUEBALL</h4>
+                    <p class="article__licence">STAR WARS</p>
+                  </div>
+                  <p class="article__price">precio: $1799,99</p>
+                </div>
+              </article>
+              <div class="producto__contador">
+                <iconify-icon
+                  class="icono-minus"
+                  icon="typcn:minus"
+                ></iconify-icon>
+                <input class="contador" type="text" value="2" min="1" />
+                <iconify-icon
+                  class="icono-plus"
+                  icon="typcn:plus"
+                ></iconify-icon>
+              </div>
+              <div class="article__total">
+                <h5>$ 3599,98</h5>
+              </div>
+              <button class="cart__btn-delete">
+                <iconify-icon
+                  class="cart__icono"
+                  icon="typcn:delete-outline"
+                ></iconify-icon>
+              </button>
+            </li>
+            <!-- ---------------------------------- -->
+            <li class="cart__item">
+              <article class="cart__article">
+                <picture class="article__cover">
+                  <img
+                    class="article__image"
+                    src="../../Assets/Img/pokemon/pidgeotto-1.webp"
+                    alt="FunkoPop de Pidgeotto de la serie Pokemon"
+                  />
+                </picture>
+                <div class="article__details">
+                  <div class="article__text">
+                    <h4 class="article__name">PIDGEOTTO</h4>
+                    <p class="article__licence">POKEMON</p>
+                  </div>
+                  <p class="article__price">precio: $1799,99</p>
+                </div>
+              </article>
+              <div class="producto__contador">
+                <iconify-icon
+                  class="icono-minus"
+                  icon="typcn:minus"
+                ></iconify-icon>
+                <input class="contador" type="text" value="1" min="1" />
+                <iconify-icon
+                  class="icono-plus"
+                  icon="typcn:plus"
+                ></iconify-icon>
+              </div>
+              <div class="article__total">
+                <h5>$ 1799,99</h5>
+              </div>
+              <button class="cart__btn-delete">
+                <iconify-icon
+                  class="cart__icono"
+                  icon="typcn:delete-outline"
+                ></iconify-icon>
+              </button>
+            </li>
+
+            <!-- Agrega más elementos similares para otros artículos en el carrito -->
+          </ul>
+        </article>
+      </section>
+      <!-- Resumen del carrito -->
+      <section class="cart__summary">
+        <h2 class="summary__title"><span>Resumen</span></h2>
+        <article class="summary__details">
+          <div class="summary__detail">
+            <p class="summary__description">Cantidad de elementos</p>
+            <p class="summary__value">3</p>
+          </div>
+          <div class="summary__detail">
+            <p class="summary__description">Subtotal</p>
+            <p class="summary__value">$ 5.399,97</p>
+          </div>
+          <div class="summary__detail summary-envio">
+            <p class="summary__description">Envio</p>
+            <p class="summary__value">$ 0,00</p>
+          </div>
+          <div class="summary__detail">
+            <p class="summary__description">Total</p>
+            <p class="summary__total">$ 5.399,97</p>
+          </div>
+        </article>
+
+        <button class="btn-carrito btn-summary">Ir a Pagar</button>
+      </section>
+    </main>
     <!-- Fin del Contenido -->
 
     <!-- Pie de página -->
