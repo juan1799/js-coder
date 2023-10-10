@@ -43,35 +43,14 @@
         </picture>
 
         <ul class="navbar__menu">
-          <li class="navbar__item with-submenu">
-            <a class="navbar__link with-icon" href="./shop.html"
-              >SHOP <iconify-icon icon="carbon:chevron-down"></iconify-icon
-            ></a>
-            <ul class="submenu">
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Funkos</a>
-              </li>
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Remeras</a>
-              </li>
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Llaveros</a>
-              </li>
-            </ul>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../index.html">VER TIENDA</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./contact.html">CONTACT</a>
+            <a class="navbar__link" href="./admin.html">ADMIN</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./login.html">LOGIN</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__cart" href="./carrito.html">
-              <img
-                src="../Assets/Img/icons/cart-icon.svg"
-                alt="Icono del carrito"
-              />
-            </a>
+            <a class="navbar__link" href="#"> SALIR </a>
           </li>
         </ul>
       </nav>
@@ -79,8 +58,33 @@
     </header>
     <!-- Fin del Encabezado -->
 
-    <!-- Contenido -->
-    <main>TRABAJEN DESDE AQUI RECUERDEN NO TOCAR EL NAVBAR / FOOTER</main>
+    <main class="container login-container">
+      <h1 class="login__title">INGRESAR A MI CUENTA</h1>
+
+      <form class="login__form">
+        <div class="form__campo">
+          <label>Email:</label>
+          <input
+            class="form__input"
+            type="email"
+            placeholder="johndoe@correo.com"
+          />
+        </div>
+        <div class="form__campo">
+          <label>Contraseña:</label>
+          <input class="form__input" type="password" placeholder="•••••••••" />
+        </div>
+      </form>
+
+      <div class="form__buttons">
+        <button type="submit" class="form__btn">Ingresar</button>
+        <label class="form__check">
+          <input type="checkbox" class="mycheck" name="recordarme" value="si" />
+          <p>Recordarme</p>
+        </label>
+      </div>
+      <a class="form__recovery" href="#">Olvidé mi contraseña</a>
+    </main>
     <!-- Fin del Contenido -->
 
     <!-- Pie de página -->
@@ -94,7 +98,9 @@
             <a class="navbar__link" href="./register.html">REGISTRARSE</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./login.html">LOGIN</a>
+            <a class="navbar__link navbar-active" href="./login.html"
+              >INGRESAR</a
+            >
           </li>
           <li class="navbar__item">
             <a class="navbar__link" href="./contact.html">CONTACTO</a>
@@ -113,10 +119,10 @@
   </body>
 
   <!-- Scripts -->
-  <script
+  <!-- <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"
-  ></script>
+  ></script> -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </html>

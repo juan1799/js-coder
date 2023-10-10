@@ -399,7 +399,10 @@ header {
 .producto__cover {
   width: 100%;
 }
-
+.contador__btn {
+  border: none;
+  background: transparent;
+}
 .contador {
   max-width: 60px;
   padding: 0.3rem;
@@ -418,6 +421,7 @@ header {
 .icono-minus:hover,
 .icono-plus:hover {
   cursor: pointer;
+  background-color: rgb(128, 2, 2);
 }
 .btn-carrito {
   background-color: var(--primary-solid);
@@ -483,7 +487,7 @@ header {
   padding: 2rem 0 2rem 2rem;
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 140vh;
   color: var(--light-font-solid);
   display: flex;
   flex-direction: column;
@@ -648,7 +652,9 @@ header {
   color: var(--primary-solid);
   cursor: pointer;
 }
-
+.cart__icono:hover {
+  color: rgb(128, 2, 2);
+}
 .cart__btn-delete {
   border: none;
   background: transparent;
@@ -732,4 +738,74 @@ header {
 
 .btn-summary:hover {
   background-color: rgb(128, 2, 2);
+}
+
+.navbar-active {
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+/********************LOGIN***********************/
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: var(--spacing-36);
+}
+
+.login__title {
+  font-family: var(--alternative-font);
+  font-size: var(--font-jumbo);
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-20);
+}
+
+.form__campo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: center;
+  font-size: var(--font-medium);
+  font-weight: 500;
+}
+
+.form__input {
+  padding: var(--spacing-12);
+
+  border: none;
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+.form__btn {
+  background-color: var(--primary-solid);
+  border: none;
+  font-size: var(--font-medium);
+  font-weight: 500;
+  color: var(--light-font-solid);
+  padding: var(--spacing-12);
+  padding-inline: var(--spacing-24);
+  margin-right: var(--spacing-20);
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background-color: rgb(128, 2, 2);
+}
+.form__check {
+  display: flex;
+  align-items: center;
+}
+
+.form__buttons {
+  display: flex;
+}
+
+.form__recovery {
+  color: #1d84b5;
+  font-size: var(--font-small);
 }
