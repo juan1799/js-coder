@@ -8,6 +8,8 @@ const productos = [
       id: "star-wars",
       nombre: "star wars",
     },
+    imagenfront: "../Assets/Img/star-wars/trooper-1.webp",
+    imagenback: "../Assets/Img/star-wars/trooper-box.webp",
   },
   {
     nombre: "PIDGEOTTO",
@@ -18,6 +20,9 @@ const productos = [
       id: "pokemon",
       nombre: "pokemon",
     },
+
+    imagenfront: "../Assets/Img/pokemon/pidgeotto-1.webp",
+    imagenback: "../Assets/Img/pokemon/pidgeotto-box.webp",
   },
   {
     nombre: "LUNA LOVE LIONMASK",
@@ -28,6 +33,8 @@ const productos = [
       id: "harry-potter",
       nombre: "harry potter",
     },
+    imagenfront: "../Assets/Img/harry-potter/luna-1.webp",
+    imagenback: "../Assets/Img/harry-potter/luna-box.webp",
   },
   {
     nombre: "HERMIONE GRANGER",
@@ -38,6 +45,8 @@ const productos = [
       id: "harry-potter",
       nombre: "harry potter",
     },
+    imagenfront: "../Assets/Img/harry-potter/hermione-1.webp",
+    imagenback: "../Assets/Img/harry-potter/hermione-box.webp",
   },
   {
     nombre: "HARRY POTTER",
@@ -48,6 +57,8 @@ const productos = [
       id: "harry-potter",
       nombre: "harry potter",
     },
+    imagenfront: "../Assets/Img/harry-potter/harry-1.webp",
+    imagenback: "../Assets/Img/harry-potter/harry-box.webp",
   },
   {
     nombre: "PATRONUS SEVERUS SNAPE",
@@ -58,6 +69,8 @@ const productos = [
       id: "harry-potter",
       nombre: "harry potter",
     },
+    imagenfront: "../Assets/Img/harry-potter/snape-patronus-1.webp",
+    imagenback: "../Assets/Img/harry-potter/snape-patronus-box.webp",
   },
   {
     nombre: "CHARMANDER",
@@ -68,6 +81,8 @@ const productos = [
       id: "pokemon",
       nombre: "pokemon",
     },
+    imagenfront: "../Assets/Img/pokemon/charmander-1.webp",
+    imagenback: "../Assets/Img/pokemon/charmander-box.webp",
   },
   {
     nombre: "DRAGONITE",
@@ -78,6 +93,8 @@ const productos = [
       id: "pokemon",
       nombre: "pokemon",
     },
+    imagenfront: "../Assets/Img/pokemon/dragonite-1.webp",
+    imagenback: "../Assets/Img/pokemon/dragonite-box.webp",
   },
   {
     nombre: "PIKACHU",
@@ -88,6 +105,8 @@ const productos = [
       id: "pokemon",
       nombre: "pokemon",
     },
+    imagenfront: "../Assets/Img/pokemon/pikachu-1.webp",
+    imagenback: "../Assets/Img/pokemon/pikachu-box.webp",
   },
   {
     nombre: "VULPIX",
@@ -98,6 +117,8 @@ const productos = [
       id: "pokemon",
       nombre: "pokemon",
     },
+    imagenfront: "../Assets/Img/pokemon/vulpix-1.webp",
+    imagenback: "../Assets/Img/pokemon/vulpix-box.webp",
   },
   {
     nombre: "BABY YODA",
@@ -108,6 +129,8 @@ const productos = [
       id: "star-wars",
       nombre: "star wars",
     },
+    imagenfront: "../Assets/Img/star-wars/baby-yoda-1.webp",
+    imagenback: "../Assets/Img/star-wars/baby-yoda-box.webp",
   },
   {
     nombre: "BOBA FETH",
@@ -118,6 +141,8 @@ const productos = [
       id: "star-wars",
       nombre: "star wars",
     },
+    imagenfront: "../Assets/Img/star-wars/bobbafeth-1.webp",
+    imagenback: "../Assets/Img/star-wars/bobbafeth-box.webp",
   },
   {
     nombre: "LUKE SKYWALKER",
@@ -128,151 +153,153 @@ const productos = [
       id: "star-wars",
       nombre: "star wars",
     },
+    imagenfront: "../Assets/Img/star-wars/luke-1.webp",
+    imagenback: "../Assets/Img/star-wars/luke-box.webp",
   },
 ];
 
 /* ------------------------------- */
-let bandera = true;
-let respuesta, compra;
-let productosEnCarrito = [];
+// let bandera = true;
+// let respuesta, compra;
+// let productosEnCarrito = [];
 
-main();
+// main();
 
-function validarOpcionSiNO(op) {
-  if (op.toUpperCase().trim() == "SI") {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function validarOpcionSiNO(op) {
+//   if (op.toUpperCase().trim() == "SI") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-function main() {
-  respuesta = prompt("Desea simular la compra de funkos? (SI/NO)");
+// function main() {
+//   respuesta = prompt("Desea simular la compra de funkos? (SI/NO)");
 
-  validarOpcionSiNO(respuesta)
-    ? menuProductos()
-    : alert("saliendo de la simulacion");
-}
+//   validarOpcionSiNO(respuesta)
+//     ? menuProductos()
+//     : alert("saliendo de la simulacion");
+// }
 
-function menuProductos() {
-  let nombresProductos = "";
-  productos.forEach(function concatenar(producto, i) {
-    let contador = i + 1;
-    nombresProductos =
-      nombresProductos + contador + "- " + producto.nombre + "\n";
-  });
-  opcion = parseInt(
-    prompt(
-      "TIENDA FUNKOS (Para salir presione 0)\nIngreso esperado: 1, 2, 3, ... , 13 \n\nSeleccione un producto:\n" +
-        nombresProductos
-    )
-  );
-  validarOpcion(opcion);
-}
+// function menuProductos() {
+//   let nombresProductos = "";
+//   productos.forEach(function concatenar(producto, i) {
+//     let contador = i + 1;
+//     nombresProductos =
+//       nombresProductos + contador + "- " + producto.nombre + "\n";
+//   });
+//   opcion = parseInt(
+//     prompt(
+//       "TIENDA FUNKOS (Para salir presione 0)\nIngreso esperado: 1, 2, 3, ... , 13 \n\nSeleccione un producto:\n" +
+//         nombresProductos
+//     )
+//   );
+//   validarOpcion(opcion);
+// }
 
-function validarOpcion(opcion) {
-  let banderaOpcion = true;
+// function validarOpcion(opcion) {
+//   let banderaOpcion = true;
 
-  while (banderaOpcion) {
-    console.log(opcion);
-    if (opcion > 0 && opcion < 14) {
-      mostrarProducto(opcion);
-      banderaOpcion = false;
-    } else if (opcion === 0) {
-      if (productosEnCarrito.length === 0) {
-        alert("El carrito está vacio, terminando la simulación ");
-      } else {
-        alert(concatenarCarrito());
-      }
-      banderaOpcion = false;
-    } else if (isNaN(opcion)) {
-      alert("error, debio ingresar un valor.");
-      opcion = 0;
-    } else {
-      alert("Ingrese una opcion correcta: (respuesta esperada: 1,2,...,13)");
-      menuProductos();
-    }
-  }
-}
-function mostrarProducto(opcion) {
-  op2 = prompt(
-    "Desea comprar el funko: " +
-      productos[opcion - 1].nombre +
-      "\nPrecio: $" +
-      productos[opcion - 1].precio +
-      "\nStock: " +
-      productos[opcion - 1].stock +
-      "\n\nRESPUESTA ESPERADA: SI / NO"
-  );
-  if (op2.toLocaleLowerCase().trim() == "si") {
-    agregarAlCarrito(productos[opcion - 1], opcion - 1);
-  } else {
-    alert("volviendo al menu de productos");
-    menuProductos();
-  }
-}
+//   while (banderaOpcion) {
+//     console.log(opcion);
+//     if (opcion > 0 && opcion < 14) {
+//       mostrarProducto(opcion);
+//       banderaOpcion = false;
+//     } else if (opcion === 0) {
+//       if (productosEnCarrito.length === 0) {
+//         alert("El carrito está vacio, terminando la simulación ");
+//       } else {
+//         alert(concatenarCarrito());
+//       }
+//       banderaOpcion = false;
+//     } else if (isNaN(opcion)) {
+//       alert("error, debio ingresar un valor.");
+//       opcion = 0;
+//     } else {
+//       alert("Ingrese una opcion correcta: (respuesta esperada: 1,2,...,13)");
+//       menuProductos();
+//     }
+//   }
+// }
+// function mostrarProducto(opcion) {
+//   op2 = prompt(
+//     "Desea comprar el funko: " +
+//       productos[opcion - 1].nombre +
+//       "\nPrecio: $" +
+//       productos[opcion - 1].precio +
+//       "\nStock: " +
+//       productos[opcion - 1].stock +
+//       "\n\nRESPUESTA ESPERADA: SI / NO"
+//   );
+//   if (op2.toLocaleLowerCase().trim() == "si") {
+//     agregarAlCarrito(productos[opcion - 1], opcion - 1);
+//   } else {
+//     alert("volviendo al menu de productos");
+//     menuProductos();
+//   }
+// }
 
-function agregarAlCarrito(producto, i) {
-  let cantidad, op;
-  const productoAgregado = productos.find((p) => p.id === producto.id);
-  cantidad = parseFloat(
-    prompt(
-      "Ingrese la cantidad funkos de " +
-        producto.nombre +
-        " desea comprar, stock maximo de " +
-        producto.stock
-    )
-  );
-  if (cantidad > 0 && cantidad <= productoAgregado.stock) {
-    productos[i].stock -= cantidad;
-    if (productosEnCarrito.some((p) => p.id === producto.id)) {
-      const index = productosEnCarrito.findIndex((p) => p.id === producto.id);
-      productosEnCarrito[index].cantidad += cantidad;
-    } else {
-      productoAgregado.cantidad = cantidad;
-      productosEnCarrito.push(productoAgregado);
-    }
+// function agregarAlCarrito(producto, i) {
+//   let cantidad, op;
+//   const productoAgregado = productos.find((p) => p.id === producto.id);
+//   cantidad = parseFloat(
+//     prompt(
+//       "Ingrese la cantidad funkos de " +
+//         producto.nombre +
+//         " desea comprar, stock maximo de " +
+//         producto.stock
+//     )
+//   );
+//   if (cantidad > 0 && cantidad <= productoAgregado.stock) {
+//     productos[i].stock -= cantidad;
+//     if (productosEnCarrito.some((p) => p.id === producto.id)) {
+//       const index = productosEnCarrito.findIndex((p) => p.id === producto.id);
+//       productosEnCarrito[index].cantidad += cantidad;
+//     } else {
+//       productoAgregado.cantidad = cantidad;
+//       productosEnCarrito.push(productoAgregado);
+//     }
 
-    console.log(productoAgregado);
-    op = prompt(
-      "El producto fue agregado al carrito, desea seguir comprando? (SI/NO)"
-    );
-    if (validarOpcionSiNO(op)) {
-      menuProductos();
-    } else {
-      alert(concatenarCarrito());
-    }
-  } else {
-    alert("la cantidad ingresada supera el stock maximo de " + producto.stock);
-    menuProductos();
-  }
-}
+//     console.log(productoAgregado);
+//     op = prompt(
+//       "El producto fue agregado al carrito, desea seguir comprando? (SI/NO)"
+//     );
+//     if (validarOpcionSiNO(op)) {
+//       menuProductos();
+//     } else {
+//       alert(concatenarCarrito());
+//     }
+//   } else {
+//     alert("la cantidad ingresada supera el stock maximo de " + producto.stock);
+//     menuProductos();
+//   }
+// }
 
-function calcularTotal() {
-  let total = 0;
-  productosEnCarrito.forEach(function sumar(producto) {
-    total += producto.cantidad * producto.precio;
-  });
-  return total;
-}
+// function calcularTotal() {
+//   let total = 0;
+//   productosEnCarrito.forEach(function sumar(producto) {
+//     total += producto.cantidad * producto.precio;
+//   });
+//   return total;
+// }
 
-function concatenarCarrito() {
-  let concatenacion = "";
-  productosEnCarrito.forEach(function concat(producto) {
-    concatenacion =
-      "Producto: " +
-      producto.nombre +
-      " - cantidad: " +
-      producto.cantidad +
-      " - subtotal: $" +
-      producto.cantidad * producto.precio +
-      "\n" +
-      concatenacion;
-  });
-  return (
-    "Carrito de compra: \n" +
-    concatenacion +
-    "\nEl total a pagar es: $" +
-    calcularTotal().toFixed(2)
-  );
-}
+// function concatenarCarrito() {
+//   let concatenacion = "";
+//   productosEnCarrito.forEach(function concat(producto) {
+//     concatenacion =
+//       "Producto: " +
+//       producto.nombre +
+//       " - cantidad: " +
+//       producto.cantidad +
+//       " - subtotal: $" +
+//       producto.cantidad * producto.precio +
+//       "\n" +
+//       concatenacion;
+//   });
+//   return (
+//     "Carrito de compra: \n" +
+//     concatenacion +
+//     "\nEl total a pagar es: $" +
+//     calcularTotal().toFixed(2)
+//   );
+// }

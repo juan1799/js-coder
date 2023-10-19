@@ -1,0 +1,171 @@
+[
+  {
+    "nombre": "STORMTROOPER LIGTHSABER",
+    "id": "funko01",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/trooper-1.webp",
+    "imagenback": "../Assets/Img/star-wars/trooper-box.webp",
+    "descripcion": "Figura coleccionable de Stormtrooper - The Mandalorian Saga, edición limitada."
+  },
+  {
+    "nombre": "PIDGEOTTO",
+    "id": "funko02",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "pokemon",
+      "nombre": "pokemon"
+    },
+    "imagenfront": "../Assets/Img/pokemon/pidgeotto-1.webp",
+    "imagenback": "../Assets/Img/pokemon/pidgeotto-box.webp",
+    "descripcion": "Figura coleccionable de Pidgeotto - saga Pokemon, edición limitada."
+  },
+  {
+    "nombre": "LUNA LOVE LIONMASK",
+    "id": "funko03",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "harry-potter",
+      "nombre": "harry potter"
+    },
+    "imagenfront": "../Assets/Img/harry-potter/luna-1.webp",
+    "imagenback": "../Assets/Img/harry-potter/luna-box.webp",
+    "descripcion": "Figura coleccionable de Luna Love Mask - saga Harry Potter, edición limitada."
+  },
+  {
+    "nombre": "HERMIONE GRANGER",
+    "id": "funko04",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "harry-potter",
+      "nombre": "harry potter"
+    },
+    "imagenfront": "../Assets/Img/harry-potter/hermione-1.webp",
+    "imagenback": "../Assets/Img/harry-potter/hermione-box.webp",
+    "descripcion": "Figura coleccionable de Hermione Granger - saga Harry Potter, edición limitada."
+  },
+  {
+    "nombre": "HARRY POTTER",
+    "id": "funko05",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "harry-potter",
+      "nombre": "harry potter"
+    },
+    "imagenfront": "../Assets/Img/harry-potter/harry-1.webp",
+    "imagenback": "../Assets/Img/harry-potter/harry-box.webp",
+    "descripcion": "Figura coleccionable de Harry potter - saga Harry Potter, edición limitada."
+  },
+  {
+    "nombre": "PATRONUS SEVERUS SNAPE",
+    "id": "funko06",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "harry-potter",
+      "nombre": "harry potter"
+    },
+    "imagenfront": "../Assets/Img/harry-potter/snape-patronus-1.webp",
+    "imagenback": "../Assets/Img/harry-potter/snape-patronus-box.webp",
+    "descripcion": "Figura coleccionable de Patronus severus snape - saga Harry Potter, edición limitada."
+  },
+  {
+    "nombre": "CHARMANDER",
+    "id": "funko07",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "pokemon",
+      "nombre": "pokemon"
+    },
+    "imagenfront": "../Assets/Img/pokemon/charmander-1.webp",
+    "imagenback": "../Assets/Img/pokemon/charmander-box.webp",
+    "descripcion": "Figura coleccionable de Charmander - saga Pokemon, edición limitada."
+  },
+  {
+    "nombre": "DRAGONITE",
+    "id": "funko08",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "pokemon",
+      "nombre": "pokemon"
+    },
+    "imagenfront": "../Assets/Img/pokemon/dragonite-1.webp",
+    "imagenback": "../Assets/Img/pokemon/dragonite-box.webp",
+    "descripcion": "Figura coleccionable de Dragonite - saga Pokemon, edición limitada."
+  },
+  {
+    "nombre": "PIKACHU",
+    "id": "funko09",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "pokemon",
+      "nombre": "pokemon"
+    },
+    "imagenfront": "../Assets/Img/pokemon/pikachu-1.webp",
+    "imagenback": "../Assets/Img/pokemon/pikachu-box.webp",
+    "descripcion": "Figura coleccionable de Pikachu - saga Pokemon, edición limitada."
+  },
+  {
+    "nombre": "VULPIX",
+    "id": "funko10",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "pokemon",
+      "nombre": "pokemon"
+    },
+    "imagenfront": "../Assets/Img/pokemon/vulpix-1.webp",
+    "imagenback": "../Assets/Img/pokemon/vulpix-box.webp",
+    "descripcion": "Figura coleccionable de Vulpix - saga Pokemon, edición limitada."
+  },
+  {
+    "nombre": "BABY YODA",
+    "id": "funko11",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/baby-yoda-1.webp",
+    "imagenback": "../Assets/Img/star-wars/baby-yoda-box.webp",
+    "descripcion": "Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada."
+  },
+  {
+    "nombre": "BOBA FETH",
+    "id": "funko12",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/bobbafeth-1.webp",
+    "imagenback": "../Assets/Img/star-wars/bobbafeth-box.webp",
+    "descripcion": "Figura coleccionable de Boba Feth - The Mandalorian Saga, edición limitada."
+  },
+  {
+    "nombre": "LUKE SKYWALKER",
+    "id": "funko13",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/luke-1.webp",
+    "imagenback": "../Assets/Img/star-wars/luke-box.webp",
+    "descripcion": "Figura coleccionable de Luke Skywalker - The Mandalorian Saga, edición limitada."
+  }
+]

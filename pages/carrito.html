@@ -109,15 +109,26 @@
                 </div>
               </article>
               <div class="producto__contador">
-                <iconify-icon
-                  class="icono-minus"
-                  icon="typcn:minus"
-                ></iconify-icon>
-                <input class="contador" type="text" value="2" min="1" />
-                <iconify-icon
-                  class="icono-plus"
-                  icon="typcn:plus"
-                ></iconify-icon>
+                <button class="contador__btn" id="sustract">
+                  <iconify-icon
+                    class="icono-minus"
+                    icon="typcn:minus"
+                  ></iconify-icon>
+                </button>
+                <input
+                  class="contador"
+                  type="text"
+                  value="2"
+                  name="quantity"
+                  id="quantity"
+                  disabled
+                />
+                <button class="contador__btn" id="add">
+                  <iconify-icon
+                    class="icono-plus"
+                    icon="typcn:plus"
+                  ></iconify-icon>
+                </button>
               </div>
               <div class="article__total">
                 <h5>$ 3599,98</h5>
@@ -148,15 +159,26 @@
                 </div>
               </article>
               <div class="producto__contador">
-                <iconify-icon
-                  class="icono-minus"
-                  icon="typcn:minus"
-                ></iconify-icon>
-                <input class="contador" type="text" value="1" min="1" />
-                <iconify-icon
-                  class="icono-plus"
-                  icon="typcn:plus"
-                ></iconify-icon>
+                <button class="contador__btn" id="sustract">
+                  <iconify-icon
+                    class="icono-minus"
+                    icon="typcn:minus"
+                  ></iconify-icon>
+                </button>
+                <input
+                  class="contador"
+                  type="text"
+                  value="1"
+                  name="quantity"
+                  id="quantity"
+                  disabled
+                />
+                <button class="contador__btn" id="add">
+                  <iconify-icon
+                    class="icono-plus"
+                    icon="typcn:plus"
+                  ></iconify-icon>
+                </button>
               </div>
               <div class="article__total">
                 <h5>$ 1799,99</h5>
@@ -232,4 +254,5 @@
   <!-- Scripts -->
 
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="../scripts/item.js"></script>
 </html>
