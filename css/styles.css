@@ -271,7 +271,9 @@ header {
 }
 
 /* SLIDER */
-
+.card-item {
+  cursor: pointer;
+}
 .slider {
   display: flex;
   flex-direction: column;
@@ -485,6 +487,7 @@ header {
 .producto__collection {
   font-size: var(--font-small);
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .container-item {

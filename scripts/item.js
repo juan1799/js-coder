@@ -1,5 +1,4 @@
 const contenedorItem = document.querySelector(".contenedor-producto");
-
 const add = document.querySelector("#add");
 const sustract = document.querySelector("#sustract");
 const quantity = document.querySelector("#quantity");
@@ -7,6 +6,15 @@ const quantity = document.querySelector("#quantity");
 const productoSelect = JSON.parse(
   localStorage.getItem("producto-seleccionado")
 );
+
+let productosEnCarrito;
+const productosCarritoLS = JSON.parse(
+  localStorage.getItem("productos-en-carrito")
+);
+
+productosCarritoLS
+  ? (productosEnCarrito = productosCarritoLS)
+  : (productosEnCarrito = []);
 
 console.log(productoSelect);
 
@@ -32,8 +40,8 @@ function cargarItem() {
       ${productoSelect.descripcion}
     </p>
     <p class="producto__price">$ ${productoSelect.precio}</p>
-    <div class="producto__contador">
-      <button class="contador__btn" id="sustract">
+    <form class="producto__contador" id="contador">
+      <button class="contador__btn" type="button" id="sustract">
         <iconify-icon
           class="icono-minus"
           icon="typcn:minus"
@@ -47,15 +55,15 @@ function cargarItem() {
         id="quantity"
         disabled
       />
-      <button class="contador__btn" id="add" >
+      <button class="contador__btn" type="button"  id="add" >
         <iconify-icon
           class="icono-plus"
           icon="typcn:plus"
         ></iconify-icon>
       </button>
 
-      <button class="btn-carrito" type="submit">Agregar al carrito</button>
-    </div>
+      <button class="btn-carrito" type="submit" id="btn-carrito">Agregar al carrito</button>
+    </form>
     <a href="#" class="producto__metodo-pago">
       <span class="metodo-pago__span">Ver metodos de pago</span> - 3
       CUOTAS SIN INTERES</a
@@ -63,14 +71,24 @@ function cargarItem() {
   </article>`;
   console.log(div);
   contenedorItem.append(div);
-  agregarBotones();
+  agregarEventos();
 }
 cargarItem();
 
-function agregarBotones() {
+function agregarEventos() {
   const add = document.querySelector("#add");
   const sustract = document.querySelector("#sustract");
   const quantity = document.querySelector("#quantity");
+  const contador = document.getElementById("contador");
+
+  contador.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let valor = parseInt(contador.children[1].value);
+    if (valor > 0) {
+      agregarAlCarrito(valor);
+    }
+  });
+
   add.addEventListener(
     "click",
     () => (quantity.value = Number(quantity.value) + 1)
@@ -79,4 +97,23 @@ function agregarBotones() {
   sustract.addEventListener("click", () => {
     quantity.value > 0 ? (quantity.value = Number(quantity.value) - 1) : 0;
   });
+}
+
+function agregarAlCarrito(valor) {
+  let productoAgregado = productoSelect;
+  if (
+    productosEnCarrito.some((producto) => producto.id === productoAgregado.id)
+  ) {
+    const index = productosEnCarrito.findIndex(
+      (producto) => producto.id === productoAgregado.id
+    );
+    productosEnCarrito[index].cantidad += valor;
+  } else {
+    productoAgregado.cantidad = valor;
+    productosEnCarrito.push(productoAgregado);
+  }
+  localStorage.setItem(
+    "productos-en-carrito",
+    JSON.stringify(productosEnCarrito)
+  );
 }
