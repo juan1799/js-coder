@@ -391,6 +391,15 @@ header {
 
 /****** ITEM ***********/
 
+.item__icono-back {
+  transform: rotatez(270deg);
+  font-size: var(--font-jumbo);
+  padding: 1rem;
+
+  border: 4px solid var(--primary-solid);
+  border-radius: 50px;
+}
+
 .producto {
   display: grid;
   width: 100%;
