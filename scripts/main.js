@@ -3,7 +3,19 @@ import productos from "./productos.json" assert { type: "json" };
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botones = document.querySelectorAll(".categoria__boton");
 const titulo = document.querySelector("#titulo-principal");
+
 let items = document.querySelectorAll(".card-item");
+
+let productosEnCarrito;
+const productosCarritoLS = JSON.parse(
+  localStorage.getItem("productos-en-carrito")
+);
+
+productosCarritoLS
+  ? (productosEnCarrito = productosCarritoLS)
+  : (productosEnCarrito = []);
+
+pintarCarrito();
 
 function cargarProductos(categoria) {
   contenedorProductos.innerHTML = "";

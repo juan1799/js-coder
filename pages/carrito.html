@@ -66,6 +66,7 @@
           </li>
           <li class="navbar__item navbar-active">
             <a class="navbar__cart" href="./carrito.html">
+              <span class="cart__lleno"></span>
               <img
                 src="../Assets/Img/icons/cart-icon.svg"
                 alt="Icono del carrito"
@@ -80,6 +81,15 @@
 
     <!-- Contenido -->
     <main class="carrito-container container">
+      <div class="cart__popup disable" id="popup">
+        <p class="popup__text">Gracias por su compra, vuelva pronto!</p>
+        <iconify-icon
+          class="popup__icon"
+          icon="mingcute:check-fill"
+        ></iconify-icon>
+        <button class="popup__button" id="boton-popup">Ok</button>
+      </div>
+
       <section class="cart">
         <h2 class="cart__title"><span>Carrito de Compras</span></h2>
         <article class="cart__productos">
@@ -95,7 +105,7 @@
         </article>
       </section>
       <!-- Resumen del carrito -->
-      <section class="cart__summary">
+      <section class="cart__summary" id="cart__summary">
         <h2 class="summary__title"><span>Resumen</span></h2>
         <article class="summary__details">
           <div class="summary__detail">

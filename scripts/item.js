@@ -7,7 +7,6 @@ const productoSelect = JSON.parse(
   localStorage.getItem("producto-seleccionado")
 );
 
-let productosEnCarrito;
 const productosCarritoLS = JSON.parse(
   localStorage.getItem("productos-en-carrito")
 );
@@ -17,6 +16,7 @@ productosCarritoLS
   : (productosEnCarrito = []);
 
 console.log(productoSelect);
+pintarCarrito();
 
 function cargarItem() {
   const div = document.createElement("div");
@@ -81,11 +81,15 @@ function agregarEventos() {
   const quantity = document.querySelector("#quantity");
   const contador = document.getElementById("contador");
 
+  let valor;
+
   contador.addEventListener("submit", (e) => {
     e.preventDefault();
-    let valor = parseInt(contador.children[1].value);
+
+    valor = parseInt(contador.children[1].value);
     if (valor > 0) {
       agregarAlCarrito(valor);
+      pintarCarrito();
     }
   });
 
