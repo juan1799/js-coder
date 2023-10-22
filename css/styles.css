@@ -866,7 +866,11 @@ header {
 .popup__button:hover {
   background-color: rgb(128, 2, 2);
 }
-
+.popup {
+  top: 60%;
+  height: 400px;
+  z-index: 3;
+}
 .disable {
   display: none;
 }
