@@ -167,5 +167,202 @@
     "imagenfront": "../Assets/Img/star-wars/luke-1.webp",
     "imagenback": "../Assets/Img/star-wars/luke-box.webp",
     "descripcion": "Figura coleccionable de Luke Skywalker - The Mandalorian Saga, edición limitada."
+  },
+  {
+    "nombre": "AHSOKA TANO",
+    "id": "funko14",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/ahsoka.png",
+    "imagenback": "../Assets/Img/star-wars/ahsoka-box.png",
+    "descripcion": "Figura coleccionable de Ahsoka Tano - Star wars saga, edición limitada."
+  },
+  {
+    "nombre": "CHOPPER",
+    "id": "funko15",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/chopper.png",
+    "imagenback": "../Assets/Img/star-wars/chopper-box.png",
+    "descripcion": "Figura coleccionable de chopper - Star wars saga, edición limitada."
+  },
+  {
+    "nombre": "DARTH MAUL",
+    "id": "funko17",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/darthmaul.png",
+    "imagenback": "../Assets/Img/star-wars/darthmaul-box.png",
+    "descripcion": "Figura coleccionable de Darth Maul - Star wars saga, edición limitada."
+  },
+  {
+    "nombre": "JET TROOPER",
+    "id": "funko18",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/jet-trooper.png",
+    "imagenback": "../Assets/Img/star-wars/jet-trooper-box.png",
+    "descripcion": "Figura coleccionable de jet trooper - Star wars saga, edición limitada."
+  },
+
+  {
+    "nombre": "GENERAL GRIEVOUS",
+    "id": "funko19",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/grievous.png",
+    "imagenback": "../Assets/Img/star-wars/grievous-box.png",
+    "descripcion": "Figura coleccionable de General Grievous - Star wars saga, edición limitada."
+  },
+
+  {
+    "nombre": "HERA EN X-WING",
+    "id": "funko20",
+    "stock": 10,
+    "precio": 2499.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/hera-in-xwing.png",
+    "imagenback": "../Assets/Img/star-wars/hera-in-xwing-box.png",
+    "descripcion": "Figura coleccionable de Hera en x-wing - Star wars saga, edición limitada."
+  },
+  {
+    "nombre": "INQUISIDOR",
+    "id": "funko21",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/inquisitor.png",
+    "imagenback": "../Assets/Img/star-wars/inquisitor-box.png",
+    "descripcion": "Figura coleccionable de Inquisidor - Star wars saga, edición limitada."
+  },
+  {
+    "nombre": "TROOPER DE LA PURGA",
+    "id": "funko22",
+    "stock": 10,
+    "precio": 2499.99,
+    "categoria": {
+      "id": "star-wars",
+      "nombre": "star wars"
+    },
+    "imagenfront": "../Assets/Img/star-wars/purgetrooper.png",
+    "imagenback": "../Assets/Img/star-wars/purgetrooper-box.png",
+    "descripcion": "Figura coleccionable de Trooper de la purga - Star wars saga, edición limitada."
+  },
+  {
+    "nombre": "IRON SPIDERMAN ",
+    "id": "funko23",
+    "stock": 10,
+    "precio": 2499.99,
+    "categoria": {
+      "id": "marvel",
+      "nombre": "marvel"
+    },
+    "imagenfront": "../Assets/Img/marvel/iron-spiderman.png",
+    "imagenback": "../Assets/Img/marvel/iron-spiderman-box.png",
+    "descripcion": "Figura coleccionable de Iron spiderman - Marvel Endgame, edición limitada."
+  },
+  {
+    "nombre": "SPIDERMAN 2099 ",
+    "id": "funko24",
+    "stock": 10,
+    "precio": 2499.99,
+    "categoria": {
+      "id": "marvel",
+      "nombre": "marvel"
+    },
+    "imagenfront": "../Assets/Img/marvel/spiderman-2099.png",
+    "imagenback": "../Assets/Img/marvel/spiderman-2099-box.png",
+    "descripcion": "Figura coleccionable de Spiderman 2098 - Marvel Spiderman across the spiderverse, edición limitada."
+  },
+  {
+    "nombre": "THE SPOT ",
+    "id": "funko25",
+    "stock": 10,
+    "precio": 2499.99,
+    "categoria": {
+      "id": "marvel",
+      "nombre": "marvel"
+    },
+    "imagenfront": "../Assets/Img/marvel/the-spot.png",
+    "imagenback": "../Assets/Img/marvel/the-spot-box.png",
+    "descripcion": "Figura coleccionable de The Spot - Marvel Spiderman across the spiderverse, edición limitada."
+  },
+  {
+    "nombre": "SCARLET SPIDER ",
+    "id": "funko26",
+    "stock": 10,
+    "precio": 2499.99,
+    "categoria": {
+      "id": "marvel",
+      "nombre": "marvel"
+    },
+    "imagenfront": "../Assets/Img/marvel/scarlet-spider.png",
+    "imagenback": "../Assets/Img/marvel/scarlet-spider-box.png",
+    "descripcion": "Figura coleccionable de Scarlet spiderman - Marvel Spiderman across the spiderverse, edición limitada."
+  },
+  {
+    "nombre": "NEBULA ",
+    "id": "funko27",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "marvel",
+      "nombre": "marvel"
+    },
+    "imagenfront": "../Assets/Img/marvel/nebula.png",
+    "imagenback": "../Assets/Img/marvel/nebula-box.png",
+    "descripcion": "Figura coleccionable de Nebula - Marvel Guardians of the galaxy, edición limitada."
+  },
+  {
+    "nombre": "ANTMAN ",
+    "id": "funko28",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "marvel",
+      "nombre": "marvel"
+    },
+    "imagenfront": "../Assets/Img/marvel/antman.png",
+    "imagenback": "../Assets/Img/marvel/antman-box.png",
+    "descripcion": "Figura coleccionable de Antman - Marvel Endgame, edición limitada."
+  },
+  {
+    "nombre": "CAPITANA MARVEL ",
+    "id": "funko29",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "marvel",
+      "nombre": "marvel"
+    },
+    "imagenfront": "../Assets/Img/marvel/capitana-marvel.png",
+    "imagenback": "../Assets/Img/marvel/capitana-marvel-box.png",
+    "descripcion": "Figura coleccionable de Capitana Marvel - Marvel Endgame, edición limitada."
   }
 ]

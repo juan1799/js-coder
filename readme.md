@@ -1,11 +1,22 @@
-# Simulador interactivo de carrito de compras: Funko shop 🔫
+# Simulador interactivo de carrito de compras: Funko shop
 
-La simulación comienza cuando el usuario ingresa que desea simular el sistema de compras de funkos.
+_Bienvenido al simulador interactivo de ecommerce funkoshop._
+
+### Tecnologias aplicadas:
+
+- HTML
+- CSS
+- JavaScript
 
 ### Instructivo:
 
-- Seleccionar SI para seguir con la simulación
-- Seleccionar un funko de la tienda (1, 2, ... , 13)
-- Confirmar que desea comprar el funko elegido
+- Debe entrar en la tienda haciendo click en el boton shop del index o bien desde la barra de navegación.
+
+- Seleccionar el funko que desee comprar
+
+- Seleccionar la cantidad que desea comprar y agregar al carrito
+
 - Seleccionar la cantidad a comprar
-- Elegir si seguir o no con la compra
+
+- Elegir más productos o bien ir al carrito para continuar con la compra
+- Hacer click en el botón "pagar" para terminar la simulación
