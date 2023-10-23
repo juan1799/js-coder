@@ -8,10 +8,6 @@ const productoSelect = JSON.parse(
   localStorage.getItem("producto-seleccionado")
 );
 
-const productosCarritoLS = JSON.parse(
-  localStorage.getItem("productos-en-carrito")
-);
-
 console.log(productoSelect);
 pintarCarrito();
 
@@ -99,8 +95,6 @@ function agregarEventos() {
   sustract.addEventListener("click", () => {
     quantity.value > 0 ? (quantity.value = Number(quantity.value) - 1) : 0;
   });
-
-  botonPopup.addEventListener("click", () => popup.classList.add("disable"));
 }
 
 function agregarAlCarrito(valor) {
