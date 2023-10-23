@@ -98,6 +98,7 @@ function agregarEventosBotonesCarrito() {
       console.log(productosCarrito);
 
       resumen();
+      pagar();
     });
 
     sustract.addEventListener("click", () => {
