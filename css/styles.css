@@ -538,6 +538,64 @@ header {
   -webkit-animation: fade 0.7s;
 }
 
+/*******************TOAST*****************/
+.toast-box {
+  position: absolute;
+  bottom: 100px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+.toast {
+  width: 400px;
+  height: 80px;
+  background-color: var(--light-font-solid);
+  font-size: var(--font-medium);
+  font-weight: 500;
+  margin: 15px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 0, 0, 0.354);
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+}
+
+.toast__icon {
+  margin: 0 20px;
+  font-size: 35px;
+  color: green;
+}
+
+.toast::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: green;
+  animation: anim 5s linear forwards;
+}
+.disable {
+  display: none;
+}
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes moveleft {
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /*******************SHOP*************************/
 
 .shop {
@@ -834,6 +892,7 @@ header {
   border-radius: 15px;
   box-shadow: 0 0 20px rgb(10, 10, 10);
   gap: var(--spacing-36);
+  animation: fade 0.9s;
 }
 
 .popup__text {

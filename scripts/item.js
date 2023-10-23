@@ -2,8 +2,7 @@ const contenedorItem = document.querySelector(".contenedor-producto");
 const add = document.querySelector("#add");
 const sustract = document.querySelector("#sustract");
 const quantity = document.querySelector("#quantity");
-const popup = document.querySelector("#popup");
-const botonPopup = document.querySelector("#boton-popup");
+let toastBox = document.querySelector("#toast-box");
 
 const productoSelect = JSON.parse(
   localStorage.getItem("producto-seleccionado")
@@ -88,7 +87,7 @@ function agregarEventos() {
     if (valor > 0) {
       agregarAlCarrito(valor);
       pintarCarrito();
-      popup.classList.remove("disable");
+      mostrarToast();
     }
   });
 
@@ -121,4 +120,15 @@ function agregarAlCarrito(valor) {
     "productos-en-carrito",
     JSON.stringify(productosEnCarrito)
   );
+}
+
+function mostrarToast() {
+  let toast = document.createElement("div");
+  toast.classList.add("toast");
+  toast.innerHTML =
+    '<iconify-icon class="toast__icon" icon="icon-park-solid:success"></iconify-icon> Agregado al carrito correctamente';
+  toastBox.appendChild(toast);
+  setTimeout(() => {
+    toast.remove();
+  }, 5500);
 }
