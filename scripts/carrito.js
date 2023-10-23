@@ -78,8 +78,6 @@ function calcularSubtotal(producto) {
 }
 
 function agregarEventosBotonesCarrito() {
-  const botonPagar = document.querySelector("#boton-resumen");
-
   productosCarrito.forEach((producto, index) => {
     const add = document.querySelector("#add" + index);
     const sustract = document.querySelector("#sustract" + index);
@@ -97,6 +95,8 @@ function agregarEventosBotonesCarrito() {
         "productos-en-carrito",
         JSON.stringify(productosCarrito)
       );
+      console.log(productosCarrito);
+
       resumen();
     });
 
@@ -109,10 +109,12 @@ function agregarEventosBotonesCarrito() {
           "productos-en-carrito",
           JSON.stringify(productosCarrito)
         );
+        console.log(productosCarrito);
       } else {
         quantity.value = 1;
       }
       resumen();
+      pagar();
     });
 
     botonEliminar.addEventListener("click", () => {
@@ -121,31 +123,15 @@ function agregarEventosBotonesCarrito() {
         "productos-en-carrito",
         JSON.stringify(productosCarrito)
       );
+      console.log(productosCarrito);
+
       cargarProductosEnCarrito();
       resumen();
       pintarCarrito();
-      if (productosCarrito.length == 0) {
-        botonPagar.classList.add("color-disable");
-      }
+      pagar();
     });
   });
-
-  console.log(productosCarrito);
-  if (productosCarrito.length === 0) {
-    botonPagar.classList.add("color-disable");
-  } else {
-    botonPagar.addEventListener("click", () => {
-      productosCarrito = [];
-      localStorage.setItem(
-        "productos-en-carrito",
-        JSON.stringify(productosCarrito)
-      );
-      cargarProductosEnCarrito();
-      popup.classList.remove("disable");
-      pintarCarrito();
-    });
-  }
-
+  pagar();
   botonPopup.addEventListener("click", () => popup.classList.add("disable"));
 }
 
@@ -186,4 +172,22 @@ function pintarCarrito() {
   productosCarrito.length !== 0
     ? puntito.classList.remove("disable")
     : puntito.classList.add("disable");
+}
+
+function pagar() {
+  const botonPagar = document.querySelector("#boton-resumen");
+  if (productosCarrito.length == 0) {
+    botonPagar.classList.add("color-disable");
+  } else {
+    botonPagar.addEventListener("click", () => {
+      productosCarrito = [];
+      localStorage.setItem(
+        "productos-en-carrito",
+        JSON.stringify(productosCarrito)
+      );
+      cargarProductosEnCarrito();
+      popup.classList.remove("disable");
+      pintarCarrito();
+    });
+  }
 }
