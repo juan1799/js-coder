@@ -95,11 +95,15 @@ function agregarEventosBotonesCarrito() {
         "productos-en-carrito",
         JSON.stringify(productosCarrito)
       );
-      console.log(productosCarrito);
 
+      sustract.classList.remove("color-disable");
       resumen();
       pagar();
     });
+
+    if (quantity.value == 1) {
+      sustract.classList.add("color-disable");
+    }
 
     sustract.addEventListener("click", () => {
       if (quantity.value > 1) {
@@ -110,7 +114,9 @@ function agregarEventosBotonesCarrito() {
           "productos-en-carrito",
           JSON.stringify(productosCarrito)
         );
-        console.log(productosCarrito);
+        if (quantity.value == 1) {
+          sustract.classList.add("color-disable");
+        }
       } else {
         quantity.value = 1;
       }
@@ -124,7 +130,6 @@ function agregarEventosBotonesCarrito() {
         "productos-en-carrito",
         JSON.stringify(productosCarrito)
       );
-      console.log(productosCarrito);
 
       cargarProductosEnCarrito();
       resumen();

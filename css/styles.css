@@ -934,10 +934,6 @@ header {
   display: none;
 }
 
-.color-disable {
-  background-color: gray;
-}
-
 /********************LOGIN***********************/
 .login-container {
   display: flex;
@@ -1065,4 +1061,13 @@ header {
 .form__label {
   color: var(--dark-solid);
   font-size: var(--font-small);
+}
+
+.color-disable {
+  background-color: gray;
+}
+
+.color-disable:hover {
+  background-color: gray;
+  cursor: default;
 }

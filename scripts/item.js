@@ -8,7 +8,6 @@ const productoSelect = JSON.parse(
   localStorage.getItem("producto-seleccionado")
 );
 
-console.log(productoSelect);
 pintarCarrito();
 
 function cargarItem() {
@@ -34,7 +33,7 @@ function cargarItem() {
     </p>
     <p class="producto__price">$ ${productoSelect.precio}</p>
     <form class="producto__contador" id="contador">
-      <button class="contador__btn" type="button" id="sustract">
+      <button class="contador__btn color-disable" type="button" id="sustract">
         <iconify-icon
           class="icono-minus"
           icon="typcn:minus"
@@ -55,14 +54,14 @@ function cargarItem() {
         ></iconify-icon>
       </button>
 
-      <button class="btn-carrito" type="submit" id="btn-carrito">Agregar al carrito</button>
+      <button class="btn-carrito color-disable" type="submit" id="btn-carrito">Agregar al carrito</button>
     </form>
     <a href="#" class="producto__metodo-pago">
       <span class="metodo-pago__span">Ver metodos de pago</span> - 3
       CUOTAS SIN INTERES</a
     >
   </article>`;
-  console.log(div);
+
   contenedorItem.append(div);
   agregarEventos();
 }
@@ -84,16 +83,26 @@ function agregarEventos() {
       agregarAlCarrito(valor);
       pintarCarrito();
       mostrarToast();
+      quantity.value = 0;
+      contador.children[3].classList.add("color-disable");
+      contador.children[0].classList.add("color-disable");
     }
   });
 
-  add.addEventListener(
-    "click",
-    () => (quantity.value = Number(quantity.value) + 1)
-  );
+  add.addEventListener("click", () => {
+    quantity.value = Number(quantity.value) + 1;
+    contador.children[3].classList.remove("color-disable");
+    contador.children[0].classList.remove("color-disable");
+  });
 
   sustract.addEventListener("click", () => {
-    quantity.value > 0 ? (quantity.value = Number(quantity.value) - 1) : 0;
+    if (quantity.value > 1) {
+      quantity.value = Number(quantity.value) - 1;
+    } else {
+      quantity.value = 0;
+      contador.children[3].classList.add("color-disable");
+      contador.children[0].classList.add("color-disable");
+    }
   });
 }
 

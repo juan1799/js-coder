@@ -48,11 +48,10 @@ function cargarProductos(categoria) {
     
   </article>
     `;
-    console.log(li);
+
     contenedorProductos.append(li);
   });
   cargarEventosItems();
-  console.log(items);
 }
 cargarProductos(productos);
 
@@ -60,7 +59,7 @@ botones.forEach((boton) => {
   boton.addEventListener("click", (evento) => {
     botones.forEach((b) => b.classList.remove("active"));
     evento.currentTarget.classList.add("active");
-    console.log(evento.currentTarget.id);
+
     if (evento.currentTarget.id !== "todos") {
       const categoria = productos.filter(
         (producto) => producto.categoria.id === evento.currentTarget.id
