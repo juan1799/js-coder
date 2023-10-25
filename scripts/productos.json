@@ -156,17 +156,17 @@
     "descripcion": "Figura coleccionable de Boba Feth - The Mandalorian Saga, edición limitada."
   },
   {
-    "nombre": "LUKE SKYWALKER",
+    "nombre": "HERA EN X-WING",
     "id": "funko13",
     "stock": 10,
-    "precio": 1799.99,
+    "precio": 2499.99,
     "categoria": {
       "id": "star-wars",
       "nombre": "star wars"
     },
-    "imagenfront": "../Assets/Img/star-wars/luke-1.webp",
-    "imagenback": "../Assets/Img/star-wars/luke-box.webp",
-    "descripcion": "Figura coleccionable de Luke Skywalker - The Mandalorian Saga, edición limitada."
+    "imagenfront": "../Assets/Img/star-wars/hera-in-xwing.png",
+    "imagenback": "../Assets/Img/star-wars/hera-in-xwing-box.png",
+    "descripcion": "Figura coleccionable de Hera en x-wing - Star wars saga, edición limitada."
   },
   {
     "nombre": "AHSOKA TANO",
@@ -234,19 +234,18 @@
     "imagenback": "../Assets/Img/star-wars/grievous-box.png",
     "descripcion": "Figura coleccionable de General Grievous - Star wars saga, edición limitada."
   },
-
   {
-    "nombre": "HERA EN X-WING",
+    "nombre": "LUKE SKYWALKER",
     "id": "funko20",
     "stock": 10,
-    "precio": 2499.99,
+    "precio": 1799.99,
     "categoria": {
       "id": "star-wars",
       "nombre": "star wars"
     },
-    "imagenfront": "../Assets/Img/star-wars/hera-in-xwing.png",
-    "imagenback": "../Assets/Img/star-wars/hera-in-xwing-box.png",
-    "descripcion": "Figura coleccionable de Hera en x-wing - Star wars saga, edición limitada."
+    "imagenfront": "../Assets/Img/star-wars/luke-1.webp",
+    "imagenback": "../Assets/Img/star-wars/luke-box.webp",
+    "descripcion": "Figura coleccionable de Luke Skywalker - The Mandalorian Saga, edición limitada."
   },
   {
     "nombre": "INQUISIDOR",
@@ -327,7 +326,7 @@
     "descripcion": "Figura coleccionable de Scarlet spiderman - Marvel Spiderman across the spiderverse, edición limitada."
   },
   {
-    "nombre": "NEBULA ",
+    "nombre": "GWEN STACY ",
     "id": "funko27",
     "stock": 10,
     "precio": 1799.99,
@@ -335,9 +334,9 @@
       "id": "marvel",
       "nombre": "marvel"
     },
-    "imagenfront": "../Assets/Img/marvel/nebula.png",
-    "imagenback": "../Assets/Img/marvel/nebula-box.png",
-    "descripcion": "Figura coleccionable de Nebula - Marvel Guardians of the galaxy, edición limitada."
+    "imagenfront": "../Assets/Img/marvel/gwen-stacy.png",
+    "imagenback": "../Assets/Img/marvel/gwen-stacy-box.jpeg",
+    "descripcion": "Figura coleccionable de Gwen Stacy -Marvel Spiderman across the spiderverse, edición limitada."
   },
   {
     "nombre": "ANTMAN ",
@@ -364,5 +363,58 @@
     "imagenfront": "../Assets/Img/marvel/capitana-marvel.png",
     "imagenback": "../Assets/Img/marvel/capitana-marvel-box.png",
     "descripcion": "Figura coleccionable de Capitana Marvel - Marvel Endgame, edición limitada."
+  },
+
+  {
+    "nombre": "NEBULA ",
+    "id": "funko30",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "marvel",
+      "nombre": "marvel"
+    },
+    "imagenfront": "../Assets/Img/marvel/nebula.png",
+    "imagenback": "../Assets/Img/marvel/nebula-box.png",
+    "descripcion": "Figura coleccionable de Nebula - Marvel Guardians of the galaxy, edición limitada."
+  },
+  {
+    "nombre": "HARRY POTTER CON CARRITO",
+    "id": "funko31",
+    "stock": 10,
+    "precio": 2499.99,
+    "categoria": {
+      "id": "harry-potter",
+      "nombre": "harry potter"
+    },
+    "imagenfront": "../Assets/Img/harry-potter/harry-potter-carrito.png",
+    "imagenback": "../Assets/Img/harry-potter/harry-potter-carrito-box.png",
+    "descripcion": "Figura coleccionable de Harry potter empujando carrito - saga Harry Potter, edición limitada."
+  },
+  {
+    "nombre": "RON WEASLEY",
+    "id": "funko32",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "harry-potter",
+      "nombre": "harry potter"
+    },
+    "imagenfront": "../Assets/Img/harry-potter/ron-weasley.png",
+    "imagenback": "../Assets/Img/harry-potter/ron-weasley-box.png",
+    "descripcion": "Figura coleccionable de Ron Weasley - saga Harry Potter, edición limitada."
+  },
+  {
+    "nombre": "HARRY CON LA PROFECÍA",
+    "id": "funko33",
+    "stock": 10,
+    "precio": 1799.99,
+    "categoria": {
+      "id": "harry-potter",
+      "nombre": "harry potter"
+    },
+    "imagenfront": "../Assets/Img/harry-potter/harry-potter-con-profecia.png",
+    "imagenback": "../Assets/Img/harry-potter/harry-potter-con-profecia-box.png",
+    "descripcion": "Figura coleccionable de Harry potter con la profecía - saga Harry Potter, edición limitada."
   }
 ]
