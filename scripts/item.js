@@ -1,7 +1,13 @@
-import productos from "./productos.json" assert { type: "json" };
+let productos = [];
+
+fetch("../scripts/productos.json")
+  .then((response) => response.json())
+  .then((data) => {
+    productos = data;
+    cargarEventosSlider(productos);
+  });
 
 let items = document.querySelectorAll(".card-item");
-
 const contenedorItem = document.querySelector(".contenedor-producto");
 const add = document.querySelector("#add");
 const sustract = document.querySelector("#sustract");
@@ -109,8 +115,6 @@ function agregarEventos() {
       contador.children[0].classList.add("color-disable");
     }
   });
-
-  cargarEventosSlider();
 }
 
 function agregarAlCarrito(valor) {
@@ -143,7 +147,7 @@ function mostrarToast() {
   }, 5500);
 }
 
-function cargarEventosSlider() {
+function cargarEventosSlider(productos) {
   items = document.querySelectorAll(".card-item");
   items.forEach((item) => {
     item.addEventListener("click", (e) => {

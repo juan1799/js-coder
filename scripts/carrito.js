@@ -140,17 +140,22 @@ function agregarEventosBotonesCarrito() {
   pagar();
   botonPopup.addEventListener("click", () => popup.classList.add("disable"));
 }
+function calcularTotal() {
+  let total = 0;
+  productosCarrito.forEach((producto) => {
+    total += calcularSubtotal(producto);
+  });
 
+  return total;
+}
 function resumen() {
   const resumen = document.querySelector("#cart__summary");
   resumen.innerHTML = "";
   let cantidadTotal = 0;
-  let total = 0;
   productosCarrito.forEach((producto) => {
     cantidadTotal += producto.cantidad;
-    total += calcularSubtotal(producto);
   });
-
+  let total = calcularTotal();
   resumen.innerHTML = `   <h2 class="summary__title"><span>Resumen</span></h2>
   <article class="summary__details">
     <div class="summary__detail">
@@ -186,14 +191,27 @@ function pagar() {
     botonPagar.classList.add("color-disable");
   } else {
     botonPagar.addEventListener("click", () => {
-      productosCarrito = [];
-      localStorage.setItem(
-        "productos-en-carrito",
-        JSON.stringify(productosCarrito)
-      );
-      cargarProductosEnCarrito();
-      popup.classList.remove("disable");
-      pintarCarrito();
+      Swal.fire({
+        title: "Desea confirmar la compra?",
+        html: `Total de la compra: ${calcularTotal()}`,
+        showDenyButton: true,
+        confirmButtonText: "SI",
+        denyButtonText: `NO`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          productosCarrito = [];
+          localStorage.setItem(
+            "productos-en-carrito",
+            JSON.stringify(productosCarrito)
+          );
+          cargarProductosEnCarrito();
+          pintarCarrito();
+          Swal.fire("Gracias por su compra, vuelva pronto", "", "success");
+        } else if (result.isDenied) {
+          Swal.fire("Changes are not saved", "", "info");
+        }
+      });
     });
   }
 }

@@ -1,5 +1,5 @@
 const puntito = document.querySelector(".cart__lleno");
-const productosCarritoLS = JSON.parse(
+let productosCarritoLS = JSON.parse(
   localStorage.getItem("productos-en-carrito")
 );
 

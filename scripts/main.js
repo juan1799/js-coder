@@ -1,4 +1,11 @@
-import productos from "./productos.json" assert { type: "json" };
+let productos = [];
+
+fetch("../scripts/productos.json")
+  .then((response) => response.json())
+  .then((data) => {
+    productos = data;
+    cargarProductos(productos);
+  });
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botones = document.querySelectorAll(".categoria__boton");
@@ -6,10 +13,7 @@ const titulo = document.querySelector("#titulo-principal");
 
 let items = document.querySelectorAll(".card-item");
 
-let productosEnCarrito;
-const productosCarritoLS = JSON.parse(
-  localStorage.getItem("productos-en-carrito")
-);
+productosCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
 
 productosCarritoLS
   ? (productosEnCarrito = productosCarritoLS)
