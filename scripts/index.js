@@ -1,10 +1,4 @@
-const getProductos = async () => {
-  const productosApi = await fetch("./scripts/productos.json");
-  productos = await productosApi.json();
-  cargarEventosSlider(productos);
-};
-
-getProductos();
+getProductos("./scripts/productos.json");
 
 function cargarEventosSlider(productos) {
   items = document.querySelectorAll(".card-item");
@@ -18,7 +12,7 @@ function cargarEventosSlider(productos) {
         "producto-seleccionado",
         JSON.stringify(productoSeleccionado)
       );
-      window.location.href = "../pages/item.html";
+      window.location.href = "./pages/item.html";
     });
   });
 }

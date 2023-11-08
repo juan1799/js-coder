@@ -1,10 +1,4 @@
-const getProductos = async () => {
-  const productosApi = await fetch("../scripts/productos.json");
-  productos = await productosApi.json();
-  cargarEventosSlider(productos);
-};
-
-getProductos();
+getProductos("../scripts/productos.json");
 
 let items = document.querySelectorAll(".card-item");
 const contenedorItem = document.querySelector(".contenedor-producto");
