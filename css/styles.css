@@ -582,8 +582,14 @@ header {
   background-color: green;
   animation: anim 5s linear forwards;
 }
+
 .disable {
   display: none;
+}
+
+.toast__link {
+  display: flex;
+  align-items: center;
 }
 @keyframes anim {
   100% {

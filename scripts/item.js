@@ -1,3 +1,7 @@
+import productos from "./productos.json" assert { type: "json" };
+
+let items = document.querySelectorAll(".card-item");
+
 const contenedorItem = document.querySelector(".contenedor-producto");
 const add = document.querySelector("#add");
 const sustract = document.querySelector("#sustract");
@@ -32,6 +36,7 @@ function cargarItem() {
       ${productoSelect.descripcion}
     </p>
     <p class="producto__price">$ ${productoSelect.precio}</p>
+
     <form class="producto__contador" id="contador">
       <button class="contador__btn color-disable" type="button" id="sustract">
         <iconify-icon
@@ -104,6 +109,8 @@ function agregarEventos() {
       contador.children[0].classList.add("color-disable");
     }
   });
+
+  cargarEventosSlider();
 }
 
 function agregarAlCarrito(valor) {
@@ -129,9 +136,26 @@ function mostrarToast() {
   let toast = document.createElement("div");
   toast.classList.add("toast");
   toast.innerHTML =
-    '<iconify-icon class="toast__icon" icon="icon-park-solid:success"></iconify-icon> Agregado al carrito correctamente';
+    '<a href="./carrito.html" class="toast__link"> <iconify-icon class="toast__icon" icon="icon-park-solid:success"></iconify-icon> Agregado al carrito correctamente </a>';
   toastBox.appendChild(toast);
   setTimeout(() => {
     toast.remove();
   }, 5500);
+}
+
+function cargarEventosSlider() {
+  items = document.querySelectorAll(".card-item");
+  items.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      const idProducto = e.currentTarget.id;
+      const productoSeleccionado = productos.find(
+        (producto) => producto.id === idProducto
+      );
+      localStorage.setItem(
+        "producto-seleccionado",
+        JSON.stringify(productoSeleccionado)
+      );
+      location.reload();
+    });
+  });
 }
