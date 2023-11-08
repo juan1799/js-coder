@@ -10,9 +10,10 @@ _Bienvenido al simulador interactivo de ecommerce funkoshop, proyecto final para
 
 ### Instructivo:
 
-- Debe entrar en la tienda haciendo click en el boton shop del index o desde la barra de navegación en la seccion "tienda" o bien seleccionando un producto directamente desde el slider.
+- Debe entrar en la tienda haciendo click en el boton shop del index o desde la barra de navegación en la seccion "tienda" o bien seleccionando un producto directamente desde el slider "ultimos lanzamientos" situada al final de la pagina de inicio.
 
   [![Screenshot-2023-11-08-131532.png](https://i.postimg.cc/P5Ckngy3/Screenshot-2023-11-08-131532.png)](https://postimg.cc/JsCFbd9Z)
+  o
   [![Screenshot-2023-11-08-152646.png](https://i.postimg.cc/zfkkm1w4/Screenshot-2023-11-08-152646.png)](https://postimg.cc/WDhZrCH7)
 
 - Seleccionar el funko que desee comprar
@@ -22,8 +23,10 @@ _Bienvenido al simulador interactivo de ecommerce funkoshop, proyecto final para
   [![Screenshot-2023-11-08-153646.png](https://i.postimg.cc/9FrRCj2s/Screenshot-2023-11-08-153646.png)](https://postimg.cc/3dQJFVdZ)
   [![Screenshot-2023-11-08-154005.png](https://i.postimg.cc/zXrzPZBn/Screenshot-2023-11-08-154005.png)](https://postimg.cc/4nWRm0pd)
 
-- presionar atrás para elegir más productos o bien ir al carrito para continuar con la compra
+- usted puede elegir otro producto desde el slider de "ultimos lanzamientos" o presionar atrás para elegir más productos o bien ir al carrito para continuar con la compra
   [![Screenshot-2023-11-08-154151.png](https://i.postimg.cc/rwDP1zkg/Screenshot-2023-11-08-154151.png)](https://postimg.cc/18ZBPm4N)
+  o
+  [![Screenshot-2023-11-08-152646.png](https://i.postimg.cc/zfkkm1w4/Screenshot-2023-11-08-152646.png)](https://postimg.cc/WDhZrCH7)
 
 - En el carrito usted puede incrementar la cantidad de un producto, reducir la cantidad de un producto, eliminar un producto (al eliminar el producto verá una notificación informando que el producto se eliminó del carrito) bien pagar por todos los productos en el carrito dando click en "ir a pagar"
   [![screenshot-carrtio.png](https://i.postimg.cc/28DHqTck/screenshot-carrtio.png)](https://postimg.cc/LhxkwkFw)
