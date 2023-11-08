@@ -591,6 +591,21 @@ header {
   display: flex;
   align-items: center;
 }
+
+.toast__icon-carrito {
+  color: #ff8800;
+}
+
+.toast-carrito::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ff8800;
+  animation: anim 5s linear forwards;
+}
 @keyframes anim {
   100% {
     width: 0;
@@ -1077,4 +1092,8 @@ header {
 .color-disable:hover {
   background-color: gray;
   cursor: default;
+}
+
+.swal2-popup {
+  font-size: var(--font-large);
 }

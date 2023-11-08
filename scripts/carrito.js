@@ -4,7 +4,7 @@ const contenedorCarritoProductos = document.querySelector(".cart__items");
 const popup = document.querySelector("#popup");
 const botonPopup = document.querySelector("#boton-popup");
 const puntito = document.querySelector(".cart__lleno");
-
+let toastBox = document.querySelector("#toast-box");
 pintarCarrito();
 
 function cargarProductosEnCarrito() {
@@ -125,12 +125,13 @@ function agregarEventosBotonesCarrito() {
     });
 
     botonEliminar.addEventListener("click", () => {
+      let nombre = productosCarrito[index].nombre;
       productosCarrito.splice(index, 1);
       localStorage.setItem(
         "productos-en-carrito",
         JSON.stringify(productosCarrito)
       );
-
+      mostrarToast(nombre);
       cargarProductosEnCarrito();
       resumen();
       pintarCarrito();
@@ -193,7 +194,7 @@ function pagar() {
     botonPagar.addEventListener("click", () => {
       Swal.fire({
         title: "Desea confirmar la compra?",
-        html: `Total de la compra: ${calcularTotal()}`,
+        html: `Total de la compra: $${calcularTotal().toFixed(2)}`,
         showDenyButton: true,
         confirmButtonText: "SI",
         denyButtonText: `NO`,
@@ -208,10 +209,19 @@ function pagar() {
           cargarProductosEnCarrito();
           pintarCarrito();
           Swal.fire("Gracias por su compra, vuelva pronto", "", "success");
-        } else if (result.isDenied) {
-          Swal.fire("Changes are not saved", "", "info");
         }
       });
     });
   }
+}
+
+function mostrarToast(nombre) {
+  let toast = document.createElement("div");
+  toast.classList.add("toast");
+  toast.classList.add("toast-carrito");
+  toast.innerHTML = `<a href="./carrito.html" class="toast__link"> <iconify-icon class="toast__icon toast__icon-carrito" icon="icon-park-solid:emotion-unhappy"></iconify-icon> Eliminaste ${nombre} del carrito </a>`;
+  toastBox.appendChild(toast);
+  setTimeout(() => {
+    toast.remove();
+  }, 5500);
 }

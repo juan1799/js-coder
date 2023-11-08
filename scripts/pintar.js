@@ -1,4 +1,5 @@
-const puntito = document.querySelector(".cart__lleno");
+let puntito = document.querySelector(".cart__lleno");
+let toastBox = document.querySelector("#toast-box");
 let productosCarritoLS = JSON.parse(
   localStorage.getItem("productos-en-carrito")
 );
