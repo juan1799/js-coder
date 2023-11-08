@@ -1,18 +1,17 @@
-let productos = [];
+const getProductos = async () => {
+  const productosApi = await fetch("../scripts/productos.json");
+  productos = await productosApi.json();
+  cargarEventosSlider(productos);
+};
 
-fetch("../scripts/productos.json")
-  .then((response) => response.json())
-  .then((data) => {
-    productos = data;
-    cargarEventosSlider(productos);
-  });
+getProductos();
 
 let items = document.querySelectorAll(".card-item");
 const contenedorItem = document.querySelector(".contenedor-producto");
 const add = document.querySelector("#add");
 const sustract = document.querySelector("#sustract");
 const quantity = document.querySelector("#quantity");
-let toastBox = document.querySelector("#toast-box");
+toastBox = document.querySelector("#toast-box");
 
 const productoSelect = JSON.parse(
   localStorage.getItem("producto-seleccionado")

@@ -12,3 +12,5 @@ new Glide(".glide", {
     },
   },
 }).mount();
+
+let productos = [];

@@ -1,11 +1,12 @@
 let productos = [];
 
-fetch("../scripts/productos.json")
-  .then((response) => response.json())
-  .then((data) => {
-    productos = data;
-    cargarProductos(productos);
-  });
+const getProductos = async () => {
+  const productosApi = await fetch("../scripts/productos.json");
+  productos = await productosApi.json();
+  cargarProductos(productos);
+};
+
+getProductos();
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botones = document.querySelectorAll(".categoria__boton");
@@ -20,6 +21,8 @@ productosCarritoLS
   : (productosEnCarrito = []);
 
 pintarCarrito();
+
+cargarProductos(productos);
 
 function cargarProductos(categoria) {
   contenedorProductos.innerHTML = "";
