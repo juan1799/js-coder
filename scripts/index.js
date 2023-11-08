@@ -1,5 +1,5 @@
 const getProductos = async () => {
-  const productosApi = await fetch("../scripts/productos.json");
+  const productosApi = await fetch("./scripts/productos.json");
   productos = await productosApi.json();
   cargarEventosSlider(productos);
 };
